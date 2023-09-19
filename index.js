@@ -135,13 +135,23 @@ console.log(encontrarMaiorNumero(arrayOriginal)); //130
 
 
 
-function encontrarMenorNumero (arr){
-    let menor = arr[0];
-    for (let i=0; i < arr.length; i++) {
-        if (arr[i] < menor){
-            menor = arr[i]
+function imprimirMaiorMenor(itens) {
+    let maiorNumero = itens[0]
+    let menorNumero = itens[0]
+    for (let i = 1; i < itens.length; i++) {
+        if (itens[i] > maiorNumero) {
+            maiorNumero = itens[i]
+        }
+        if (itens[i] < menorNumero) {
+            menorNumero = itens[i]
         }
     }
-    return "o menor numero é" + menor;
+    console.log(`Maior número: ${maiorNumero}`)
+    console.log(`Menor número: ${menorNumero}`)
 }
-console.log(encontrarMenorNumero(arrayOriginal));
+
+imprimirLista(arrayOriginal)
+imprimirValoresDivididos(arrayOriginal)
+filtrarNumerosPares(arrayOriginal)
+identificarElementos(arrayOriginal)
+imprimirMaiorMenor(arrayOriginal)
