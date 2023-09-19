@@ -10,7 +10,9 @@ for(let i = 0; i < 5; i++) {
 valor += i
 }
 console.log(valor)
-// o código for permite simplificar os valores vão aumentando ate que seja numero menor que 5. LOGO EM SEGUIDA PEDE PARA SOMAR O VALOR + ELE MESMO, OU SEJA RESULTADO 10.
+////Este código está criando um loop "FOR" que começa com a variável "i" igual a 0 e continua enquanto "i" é menor que 5. 
+///A cada loop, o valor de "i" é adicionado à variável "valor". Após o loop, o código imprime o valor final da variável "valor" no console.
+//O resultado impresso no console será 10 , pois o loop adiciona os valores de 0, 1, 2, 3 4 na variável "valor", resultando (4+3+2+1)
 
 
 //2. Leia o código abaixo:
